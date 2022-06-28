@@ -3,6 +3,8 @@
 commit 1 : initial Express app to power the backend api .
           
 commit 2 : Express Router & API Routes
+           creating new folder named routes inside our backend folder.
+           inside routes folder we create new file named workouts.js
 
 
                          API Endpoints
