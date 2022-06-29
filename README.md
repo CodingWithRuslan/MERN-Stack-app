@@ -22,3 +22,8 @@ commit 2 : Express Router & API Routes
            GET    /workouts/:id --> Gets a single workout document
            DELETE /workouts/:id --> Deletes a single workout document
            PATCH  /workouts/:id --> Updates a single workout document
+           
+commit 3 : MongoDB Atlas & Mongoose
+                               
+          set up a database using MongoDB Atlas, and then connect to it from our application using a package called Mongoose.
+
