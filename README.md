@@ -27,3 +27,6 @@ commit 3 : MongoDB Atlas & Mongoose
                                
           set up a database using MongoDB Atlas, and then connect to it from our application using a package called Mongoose.
 
+commit 4 : Models & Schemas
+
+          create a new model & schema for the dtabase collection we'll be using (workouts)
