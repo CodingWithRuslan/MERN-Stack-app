@@ -30,3 +30,8 @@ commit 3 : MongoDB Atlas & Mongoose
 commit 4 : Models & Schemas
 
           create a new model & schema for the dtabase collection we'll be using (workouts)
+          
+commit 5 : Controllers 
+
+          make some controller functions for the workout routes.
+          
