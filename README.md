@@ -35,3 +35,7 @@ commit 5 : Controllers
 
           make some controller functions for the workout routes.
           
+commit 6 : Controllers
+
+          finish off the controller functions that we started in the last commit(6)
+          
