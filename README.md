@@ -42,3 +42,8 @@ commit 6 : Controllers
 commit 7 : Making a React App 
 
           start our React application and set up a homepage route.
+    
+commit 8 : Fetching Data
+          
+          we'll make a request to the backend api to fetch workouts data and output it in the React template.
+
