@@ -38,4 +38,7 @@ commit 5 : Controllers
 commit 6 : Controllers
 
           finish off the controller functions that we started in the last commit(6)
-          
+
+commit 7 : Making a React App 
+
+          start our React application and set up a homepage route.
