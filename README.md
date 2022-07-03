@@ -1,5 +1,12 @@
 # MERN-app
+MERN Stack application:
+frontend : react .
+middle : express & node .
+backend : mongoDB .
 
+steps :
+         
+         i will provide info about what i did in each step of development .
 step 1 : initial Express app to power the backend api .
           
           we will use Postman.
@@ -59,5 +66,11 @@ step 11 : Deleting Data
           
           Deleting Data.
           
-step 12:
+step 12: Handling Error Responses
+
+          Handling Error Responses.
+
+step 13: Finishing Touches
+         
+         Finishing Touches (npm install date-fns).
 
