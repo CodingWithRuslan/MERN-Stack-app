@@ -47,3 +47,6 @@ commit 8 : Fetching Data
           
           we'll make a request to the backend api to fetch workouts data and output it in the React template.
 
+commit 9 : New Workout Form
+
+          we'll make a form to add new workouts.
