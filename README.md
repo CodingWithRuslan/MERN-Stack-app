@@ -50,3 +50,7 @@ commit 8 : Fetching Data
 commit 9 : New Workout Form
 
           we'll make a form to add new workouts.
+
+commit 10 : Adding React Context
+
+           we'll create a React Context to provide some global workouts state to the entire React application.
