@@ -7,13 +7,15 @@ const WorkoutForm = () => {
   const [title, setTitle] = useState('')
   const [load, setLoad] = useState('')
   const [reps, setReps] = useState('')
+  const [sets, setSets] = useState('')
+  const [notes, setNotes] = useState('')
   const [error, setError] = useState(null)
   const [emptyFields, setEmptyFields] = useState([])
 
   const handleSubmit = async (e) => {
     e.preventDefault()
 
-    const workout = {title, load, reps}
+    const workout = {title, load, reps, sets, notes}
     
     const response = await fetch('/api/workouts', {
       method: 'POST',
@@ -34,6 +36,8 @@ const WorkoutForm = () => {
       setTitle('')
       setLoad('')
       setReps('')
+      setSets('')
+      setNotes('')
       dispatch({type: 'CREATE_WORKOUT', payload: json})
     }
 
@@ -65,6 +69,22 @@ const WorkoutForm = () => {
         onChange={(e) => setReps(e.target.value)} 
         value={reps}
         className={emptyFields.includes('reps') ? 'error' : ''}
+      />
+
+      <label>Number of Sets:</label>
+      <input 
+        type="number" 
+        onChange={(e) => setSets(e.target.value)} 
+        value={sets}
+        className={emptyFields.includes('sets') ? 'error' : ''}
+      />
+
+      <label>Notes:</label>
+      <input 
+        type="text" 
+        onChange={(e) => setNotes(e.target.value)} 
+        value={notes}
+        className={emptyFields.includes('notes') ? 'error' : ''}
       />
 
       <button>Add Workout</button>
