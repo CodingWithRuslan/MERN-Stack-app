@@ -79,3 +79,4 @@ step 13: Finishing Touches
                   
 step 14 & Authentication step 1:
 
+         implement authentication (using JSON web tokens), within the MERN stack
