@@ -74,3 +74,9 @@ step 13: Finishing Touches
          
          Finishing Touches (npm install date-fns).
 
+
+                  #############Authentication#############
+                  
+step 14 & Authentication step 1:
+
+         implement authentication (using JSON web tokens), within the MERN stack
