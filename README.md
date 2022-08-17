@@ -79,4 +79,8 @@ step 13: Finishing Touches
                   
 step 14 & Authentication step 1:
 
-         implement authentication (using JSON web tokens), within the MERN stack
+         implement authentication (using JSON web tokens), within the MERN stack.
+         
+step 15 & Authentication step 2:
+
+         make a user controller & model, and set up some routes for authentication.
