@@ -88,3 +88,27 @@ step 15 & Authentication step 2:
 step 16 & Authentication step 3:
 
          Signing Up & Hashing Passwords
+
+step 17 & Authentication step 4:
+
+         Email & Password Validation
+
+step 18 & Authentication step 6:
+
+         Signing Tokens
+
+step 19 & Authentication step 7:
+
+         Logging Users In
+
+step 20 & Authentication step 8:
+
+         React Auth Context
+
+step 21 & Authentication step 9:
+
+         Login & Signup Forms
+
+step 22 & Authentication step 10:
+
+         Making a useSignup Hook

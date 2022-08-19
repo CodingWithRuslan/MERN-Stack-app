@@ -12,7 +12,7 @@ body {
   font-family: "Poppins";
 }
 header {
-  background: #fff;
+  background: rgb(174, 212, 228);
 }
 header .container {
   max-width: 1400px;
@@ -23,7 +23,7 @@ header .container {
   justify-content: space-between;
 }
 header a {
-  color: #333;
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 .pages{
@@ -35,7 +35,7 @@ header a {
 /* homepage */
 .home {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 3fr 6fr; /*leftSize rightSize*/
   gap: 100px;
 }
 .workout-details {
@@ -56,7 +56,7 @@ header a {
   font-size: 0.9em;
   color: #555;
 }
-.workout-details span {
+.workout-details span { /*trash can*/
   position: absolute;
   top: 20px;
   right: 20px;
@@ -64,7 +64,7 @@ header a {
   background: #f1f1f1;
   padding: 6px;
   border-radius: 50%;
-  color: #333;
+  color: rgb(180, 31, 31);
 }
 
 /* new workout form */
@@ -99,4 +99,21 @@ div.error {
 }
 input.error {
   border: 1px solid var(--error);
+}
+
+/* navbar */
+nav {
+  display: flex;
+  align-items: center;
+}
+nav a {
+  margin-left: 10px;
+}
+/* auth forms */
+form.signup, form.login {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
 }
