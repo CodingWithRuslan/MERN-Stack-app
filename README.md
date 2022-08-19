@@ -84,3 +84,7 @@ step 14 & Authentication step 1:
 step 15 & Authentication step 2:
 
          make a user controller & model, and set up some routes for authentication.
+
+step 16 & Authentication step 3:
+
+         Signing Up & Hashing Passwords
