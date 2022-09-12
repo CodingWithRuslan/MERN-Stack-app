@@ -112,3 +112,32 @@ step 21 & Authentication step 9:
 step 22 & Authentication step 10:
 
          Making a useSignup Hook
+
+step 23 & Authentication step 11:
+
+         Making a useLogout Hook
+         
+step 24 & Authentication step 12:
+
+         Making a useLogin Hook
+         make a custom useLogin hook to log users in to the application.
+
+step 25 & Authentication step 13:
+
+         Setting the Initial Auth Status
+
+step 26 & Authentication step 14:
+
+         Protecting API Routes
+
+step 27 & Authentication step 15:
+
+         Making Authorized Requests
+
+step 28 & Authentication step 16:
+
+          Protecting React Routes
+
+step 29 & Authentication step 17:
+
+          Assigning Workouts to Users
