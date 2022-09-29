@@ -15,6 +15,7 @@ header {
   background: rgb(174, 212, 228);
 }
 header .container {
+  font-size: 16px;
   max-width: 1400px;
   margin: 0 auto;
   padding: 10px 20px;
@@ -32,12 +33,24 @@ header a {
   margin: 0 auto;
 }
 
+
 /* homepage */
 .home {
   display: grid;
   grid-template-columns: 5fr 5fr; /*leftSize rightSize*/
   gap: 100px;
 }
+
+@media screen and (min-width:651px) { /*Desktop*/
+  .home {gap: 100px}
+  header .container {font-size: 18px;}
+}
+@media screen and (max-width:650px) { /*Phone*/
+  .home {gap: 20px}
+  header .container {font-size: 12px;}
+}
+
+
 .workout-details {
   background: #fff;
   border-radius: 4px;
