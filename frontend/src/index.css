@@ -41,11 +41,11 @@ header a {
   gap: 100px;
 }
 
-@media screen and (min-width:651px) { /*Desktop*/
+@media screen and (min-width:652px) { /*Desktop*/
   .home {gap: 100px}
   header .container {font-size: 18px;}
 }
-@media screen and (max-width:650px) { /*Phone*/
+@media screen and (max-width:651px) { /*Phone*/
   .home {gap: 20px}
   header .container {font-size: 12px;}
 }
