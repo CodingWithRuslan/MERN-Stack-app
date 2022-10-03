@@ -47,7 +47,7 @@ header a {
 }
 @media screen and (max-width:651px) { /*Phone*/
   .home {gap: 20px}
-  header .container {font-size: 12px;}
+  header .container {font-size: 10px;}
 }
 
 
