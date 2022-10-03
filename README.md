@@ -3,6 +3,7 @@ MERN Stack application:
 frontend : react .
 middle : express & node .
 backend : mongoDB .
+Workout Partner
 
 steps :
          
