@@ -11,6 +11,9 @@
     "install-frontend": "cd frontend && npm install && npm start && cd ..",
     "install-backend": "cd backend && npm install && npm start && cd .."
   },
+  "engines": {
+    "node": "16.14.0"
+  },
   "devDependencies": {
     "npm-run-all": "^4.1.5"
   }
