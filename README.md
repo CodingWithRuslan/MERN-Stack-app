@@ -1,9 +1,9 @@
 # Workout Partner
-## App for our graduation thesis
-## By: Ruslan & Benny
+### App for our graduation thesis
+### By: Ruslan & Benny
 
 
-# MERN-app [MongoDB, Express, React, Node]
+#### MERN-app [MongoDB, Express, React, Node]
 
 
 
