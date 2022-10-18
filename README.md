@@ -1,13 +1,16 @@
-# MERN-app
-MERN Stack application:
-frontend : react .
-middle : express & node .
-backend : mongoDB .
-Workout Partner
+# Workout Partner
+# App for our graduation thesis
+# By: Ruslan & Benny
 
-steps :
-         
-         i will provide info about what i did in each step of development .
+
+# MERN-app [MongoDB, Express, React, Node]
+
+
+
+Steps :
+         We will provide info about what i did in each step of development .
+
+
 step 1 : initial Express app to power the backend api .
           
           we will use Postman.
