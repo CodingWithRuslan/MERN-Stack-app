@@ -6,7 +6,12 @@ import Home from './pages/Home'
 import Login from './pages/Login'
 import Signup from './pages/Signup'
 import Navbar from './components/Navbar'
+import Navbar2 from './components/Navbar2'
 import Footer from './components/Footer'
+import Bmi from './pages/Bmi'
+import Music from './pages/Music'
+import Water from './pages/Water'
+import Exer from './pages/Exer'
 
 function App() {
   const { user } = useAuthContext()
@@ -14,7 +19,12 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      <div className="nav">
         <Navbar />
+      </div>
+      <div className="nav2">
+      <Navbar2 />
+      </div>
         <div className="pages">
           <Routes>
             <Route 
@@ -29,6 +39,27 @@ function App() {
               path="/signup" 
               element={!user ? <Signup /> : <Navigate to="/" />} 
             />
+
+            <Route 
+              path="/bmi" 
+              element={!user ? <Bmi /> : <Bmi />} 
+            />
+
+            <Route 
+              path="/music" 
+              element={!user ? <Music /> : <Music />} 
+            />
+
+              <Route 
+              path="/water" 
+              element={!user ? <Water /> : <Water />} 
+            />
+
+              <Route 
+              path="/exer" 
+              element={!user ? <Exer /> : <Exer />} 
+            />
+
           </Routes>
         </div>
         <Footer />

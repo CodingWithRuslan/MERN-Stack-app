@@ -9,6 +9,7 @@ import WorkoutForm from '../components/WorkoutForm'
 import Stopwatch from '../components/Stopwatch'
 import Countdown from '../components/Countdown'
 
+
 const Home = () => {
 
   const {workouts, dispatch} = useWorkoutsContext()
@@ -51,7 +52,7 @@ const Home = () => {
       <b>Rest&nbsp;Countdown</b>
       <Countdown/>
       </div>
-
+    
       <div style={{textAlign: 'center'}}>
       <b>Total Workout</b>
       <br/>
@@ -66,7 +67,7 @@ const Home = () => {
      
 
       <div className="workouts">
-      <b>Workout List</b>
+      <b>Exercises List</b>
         {workouts && workouts.map((workout) => (
           <WorkoutDetails key={workout._id} workout={workout} />
         ))}
