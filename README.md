@@ -8,7 +8,7 @@
 
 
 Steps :
-         We will provide info about what i did in each step of development .
+         We will provide info about what we did in each step of development .
 
 
 step 1 : initial Express app to power the backend api .
@@ -145,3 +145,15 @@ step 28 & Authentication step 16:
 step 29 & Authentication step 17:
 
           Assigning Workouts to Users
+
+step 30:
+
+         Adding Features
+                  Chat/Forum Feature
+                  Total Workout Stopwatch Feature
+                  Rest Countdown Feature
+                  Water Page Feature
+                  Exercises Page Feature
+                  Music Page Feature
+                  BMI Page Feature
+         
