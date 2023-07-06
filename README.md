@@ -1,5 +1,5 @@
 # Workout Partner
-### App for our graduation thesis
+### App for our graduation Final Project
 ### By: Ruslan & Benny
 
 
