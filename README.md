@@ -2,9 +2,11 @@
 ### App for our graduation Final Project
 ### By: Ruslan & Benny
 ### Final project presentation video: https://www.youtube.com/watch?v=ZkIkzOGMfUU
+https://github.com/Benny902/WorkoutPartner/assets/73943596/e4e111f3-9e8d-4577-b84f-d7d88bb34f5a
 ### Link to the Web app: https://workoutpartners.herokuapp.com
 
 #### MERN-app [MongoDB, Express, React, Node]
+
 
 
 
