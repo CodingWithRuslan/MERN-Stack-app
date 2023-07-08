@@ -7,7 +7,12 @@ const Bmi = () => {
   return (
     <div className="bmi" >
 <Bmitrack/>
+
+  
+    
     </div>
+
+    
   )
 }
 

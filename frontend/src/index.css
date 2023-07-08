@@ -87,12 +87,27 @@ body {
   color: var(--primary);
 }
 
+.navbutton2 {
+  float: left;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #960000;
+  background: rgba(147, 209, 236, 0);
+  border-radius: 30px;
+}
+
+.navbutton2:hover {
+  color: var(--primary);
+}
+
 .dark-mode {
-  --primary: #1195e2; /* buttons and etc */
+  --myheader: rgba(174, 212, 228, 0.85); /* header */
+  --primary: #0974b3; /* buttons and etc */
   --error: #e7195a; /*error*/
   --textcolor:#f1f1f1; /*text*/
-  --mycolor:rgb(17, 17, 17); /*background*/
-  --mycolor2:rgb(31, 31, 31); /*box's and input*/
+  --mycolor:rgb(33, 33, 33); /*background*/
+  --mycolor2:rgb(11, 11, 11); /*box's and input*/
   --mycolor3:#f1f1f1; /*text inside excercise box*/
   transition: 0.5s;
 }
@@ -108,7 +123,7 @@ input {
 }
 
 .arrows {
-  background-color: var(--mycolor);
+  background-color: var(--myheader);
 }
 
 .container .button {
@@ -121,7 +136,7 @@ input {
   border: none;
   color: var(--mycolor2);
   padding: 1px;
-  padding-bottom: 37px;
+  padding-bottom: 1px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -129,7 +144,7 @@ input {
   cursor: pointer;
   border-radius: 20px;
   display: inline-block;
-  height: 33px;
+  height: 30px;
   position: relative;
   width: 65px;
   transition: 0.5s;
@@ -139,6 +154,27 @@ input {
   background-color: var(--mycolor3);
   color: var(--mycolor3);
   border-radius: 20px;
+}
+
+
+.button3 { /*the light/dark button*/
+  background-color: #0000002d;
+  border: none;
+  color: var(--mycolor2);
+  padding: 1px;
+  padding-bottom: 11px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 1px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+  display: inline-block;
+  height: 33px;
+  position: relative;
+  width: 110px;
+  transition: 0.5s;
+  font-size: 18px;
 }
 
 header {
@@ -152,7 +188,7 @@ header .container {
   padding: 10px 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 header .container2 {
   font-size: 16px;
@@ -171,6 +207,8 @@ header a {
   max-width: 1400px;
   padding: 20px;
   margin: 0 auto;
+  padding-bottom: 100px;
+  min-height: 800px;
 }
 
 
@@ -181,7 +219,7 @@ header a {
   padding: 20px;
 }
 
-@media screen and (min-width:652px) { /*Desktop*/
+@media screen and (min-width:1922px) { /*Desktop*/
   .nav2 {
     display:none;
   }
@@ -212,10 +250,11 @@ header a {
     font-size: 25px;
   }
   .button2 {
-    font-size: 25px;
+    font-size: 20px;
+    padding-bottom: 10px;
   }
 }
-@media screen and (max-width:651px) { /*Phone*/
+@media screen and (max-width:1921px) { /*Phone*/
   .nav {
     display:none;
   }
@@ -255,6 +294,12 @@ header a {
     width: 45px;
     padding-bottom: 1px;
   }
+  .button3 {
+    font-size: 15px;
+    height: 24px;
+    width: 85px;
+    padding-bottom: 1px;
+  }
   .toggle-button {
     position: absolute;
     right: 30px;
@@ -269,11 +314,11 @@ header a {
 
   .main-header {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
   .main-nav ul {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     display: none;
   }
   .main-nav li {
@@ -285,6 +330,13 @@ header a {
   .main-nav ul.active {
     display: flex;
   }
+  .workout-details {
+    font-size: 14px;
+    margin: 1px;
+    padding: 1px;
+    position: relative;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.25);
+  }
 }
 
 
@@ -294,11 +346,11 @@ header a {
   margin: 20px auto;
   padding: 20px;
   position: relative;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.25);
 }
 .workout-details h4 {
   margin: 0 0 10px 0;
-  font-size: 1.2em;
+  font-size: 1em;
   color: var(--primary);
 }
 .workout-details p {
@@ -308,8 +360,8 @@ header a {
 }
 .workout-details span { /*trash can*/
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 10px;
+  right: 10px;
   cursor: pointer;
   background: var(--mycolor2);
   padding: 6px;
@@ -396,10 +448,12 @@ form.signup, form.login {
 }
 
 .Countdown-display button {
-  border: solid 1px transparent;
-  border-radius: 2px;
+  padding: 0px;
+  border: solid 0px transparent;
+  border-radius: 0px;
   color: #000000;
   font-size: 16px;
+
 }
 
 .Button-start, .Button-stop, .Button-reset, .Button-resume {
@@ -410,7 +464,8 @@ form.signup, form.login {
   margin-left: 2px;
   border-radius: 14px;
   cursor: pointer;
-  width:40%;
+  width:60%;
+  height: 35px;
 }
 
 .bmi {
@@ -438,4 +493,9 @@ form.signup, form.login {
   padding: 2px;
   background: var(--mycolor2);
   border-radius: 55px;
+}
+
+
+.photo {
+  filter: sepia(1%) saturate(1%) brightness(999%) hue-rotate(1deg);
 }

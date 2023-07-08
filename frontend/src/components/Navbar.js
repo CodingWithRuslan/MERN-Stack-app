@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom'
 import { useLogout } from '../hooks/useLogout'
 import { useAuthContext } from '../hooks/useAuthContext'
 import {useState} from 'react';
-
-
+import ShowHide from './ShowHide';
+import Logo from "../assets/workoutpartnerlogo.png";
 
 const Navbar = () => {
 
@@ -30,24 +30,37 @@ const Navbar = () => {
   return (
     <header>
       <div className="container">
-        <Link to="/">
-          <h1 >Workout&nbsp;Partner</h1>
-          <button className="button2" onClick={myFunction}>{buttonText}</button>
+      <Link to="/">
+      <img src={Logo} alt="logo" className="photo" style={{marginRight: 11, width: 90,height: 90}}/>
+      </Link>
+      
+      <Link to="/">  
+          <h1 style={{marginRight: 20}}>Workout&nbsp;Partner</h1>
         </Link>
+     
+     <Link to="/">
+      <figcaption style={{marginLeft: 4}}><button className="button2" onClick={myFunction}>{buttonText}</button></figcaption>
+     <ShowHide style={{cursor:'pointer'}}/>
+     </Link>
+      
+       
+        <hr style={{border: 0, width: 31.1,height: 0.1}} />
         <nav>
           {user && (
             <div>
-              <span>{user.email}</span>
-              <button className="navbutton" onClick={handleClick}>Log out</button>
-              <div className='smalldiv'>&nbsp;</div>
-              &nbsp;
-              <hr/>
+             <span>{user.email}</span>
+            <button className="navbutton2" onClick={handleClick}>Log out</button>
+              <hr style={{border: 0, width: 0.1,height: 31}} />
              <Link className="navbutton" to="/">Home</Link>
              <Link className="navbutton" to="/bmi">BMI</Link>
              <Link className="navbutton" to="/music">Music</Link>
              <Link className="navbutton" to="/water">Water</Link>
              <Link className="navbutton" to="/exer">Exercises</Link>
+             
+             
+             
              &nbsp;&nbsp;
+             
               
             </div>
           )}
@@ -55,10 +68,10 @@ const Navbar = () => {
             <div>
               
               <Link className="navbutton" to="/login">Login</Link>
-              <Link className="navbutton" to="/signup">Signup</Link>
-              <div>&nbsp;</div>
-              <hr style={{borderColor: 'transparent'}}/>
-              <hr/>
+              <Link className="navbutton" to="/signup">Signup </Link>
+              
+              <hr style={{border: 0, width: 0.1,height: 50}} />
+              
 
              <Link className="navbutton" to="/">Home</Link>
              <Link className="navbutton" to="/bmi">BMI</Link>
@@ -70,8 +83,11 @@ const Navbar = () => {
             </div>
           )}
         </nav>
+        
       </div>
+    
     </header>
+    
   )
 }
 
