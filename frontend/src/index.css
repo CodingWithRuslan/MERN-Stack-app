@@ -3,17 +3,184 @@
 
 /* layout */
 :root {
-  --primary: #1195e2;
-  --error: #e7195a;
+  --myheader: rgb(174, 212, 228); /* header */
+  --primary: #1195e2; /* buttons and etc */
+  --error: #e7195a; /*error*/
+  --textcolor:black; /*text*/
+  --mycolor:#f1f1f1; /*background*/
+  --mycolor2:white; /*box's*/
+  --mycolor3:black; /*text inside excercise box*/
 }
 body {
-  background: #f1f1f1;
+  background: var(--mycolor);
   margin: 0;
   font-family: "Poppins";
+  color: var(--textcolor);
+  transition: 0.5s;
 }
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "poppins", sans-serif;
+}
+.brand-logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  color: inherit;
+  text-decoration: none;
+  color: #fff;
+  font-family: "poppins", cursive, sans-serif;
+  font-weight: 200;
+  padding:7px;
+}
+.brand-logo-name {
+  font-size: 1rem;
+}
+.main-nav ul {
+  display: flex;
+  margin: 0;
+  padding:10px;
+  list-style: none;
+}
+
+.main-nav a {
+  color: inherit;
+  text-decoration: none;
+  padding: 0 1rem;
+}
+.main-nav a:hover {
+  color: #585050;
+}
+.toggle-button {
+  display: none;
+}
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2px;
+}
+
+.navbutton {
+  float: left;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #f2f2f2;
+  background: rgba(147, 209, 236, 0);
+  border-radius: 30px;
+}
+
+.navbutton:hover {
+  color: var(--primary);
+}
+
+.navbutton2 {
+  float: left;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #960000;
+  background: rgba(147, 209, 236, 0);
+  border-radius: 30px;
+}
+
+.navbutton2:hover {
+  color: var(--primary);
+}
+
+.dark-mode {
+  --myheader: rgba(174, 212, 228, 0.85); /* header */
+  --primary: #0974b3; /* buttons and etc */
+  --error: #e7195a; /*error*/
+  --textcolor:#f1f1f1; /*text*/
+  --mycolor:rgb(33, 33, 33); /*background*/
+  --mycolor2:rgb(11, 11, 11); /*box's and input*/
+  --mycolor3:#f1f1f1; /*text inside excercise box*/
+  transition: 0.5s;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: var(--mycolor2);
+  color: var(--textcolor3);
+}
+
+.arrows {
+  background-color: var(--myheader);
+}
+
+.container .button {
+  color: red;
+  border: red;
+}
+
+.button2 { /*the light/dark button*/
+  background-color: #0000002d;
+  border: none;
+  color: var(--mycolor2);
+  padding: 1px;
+  padding-bottom: 1px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 1px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+  display: inline-block;
+  height: 30px;
+  position: relative;
+  width: 65px;
+  transition: 0.5s;
+}
+
+.button2:hover {
+  background-color: var(--mycolor3);
+  color: var(--mycolor3);
+  border-radius: 20px;
+}
+
+
+.button3 { /*the light/dark button*/
+  background-color: #0000002d;
+  border: none;
+  color: var(--mycolor2);
+  padding: 1px;
+  padding-bottom: 11px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 1px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+  display: inline-block;
+  height: 33px;
+  position: relative;
+  width: 110px;
+  transition: 0.5s;
+  font-size: 18px;
+}
+
 header {
-  background: rgb(174, 212, 228);
+  background: var(--myheader);
 }
+
 header .container {
   font-size: 16px;
   max-width: 1400px;
@@ -21,7 +188,16 @@ header .container {
   padding: 10px 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+header .container2 {
+  font-size: 16px;
+  max-width: 1400px;
+  margin: auto;
+  padding: 10px 20px;
+  display:inline;
+  align-items: center;
+  text-align: center;
 }
 header a {
   color: rgb(0, 0, 0);
@@ -31,6 +207,8 @@ header a {
   max-width: 1400px;
   padding: 20px;
   margin: 0 auto;
+  padding-bottom: 100px;
+  min-height: 800px;
 }
 
 
@@ -38,46 +216,161 @@ header a {
 .home {
   display: grid;
   grid-template-columns: 5fr 5fr; /*leftSize rightSize*/
-  gap: 100px;
+  padding: 20px;
 }
 
-@media screen and (min-width:652px) { /*Desktop*/
-  .home {gap: 100px}
-  header .container {font-size: 18px;}
+@media screen and (min-width:1922px) { /*Desktop*/
+  .nav2 {
+    display:none;
+  }
+  .home {
+    row-gap: 10px;
+    column-gap: 100px;
+  }
+  header .container {
+    font-size: 18px;
+  }
+  header .container2 {
+    font-size: 18px;
+  }
+  h1{
+    color:var(--primary);
+    /*-webkit-text-stroke: 1px rgb(0, 0, 0);*/
+  }
+  .stopwatch .numbers {
+    font-size: 30px;
+  }
+  .stopwatch .button {
+    font-size: 30px;
+  }
+  label, input {
+    padding: 10px;
+  }
+  .navbutton {
+    font-size: 25px;
+  }
+  .button2 {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
 }
-@media screen and (max-width:651px) { /*Phone*/
-  .home {gap: 20px}
-  header .container {font-size: 10px;}
+@media screen and (max-width:1921px) { /*Phone*/
+  .nav {
+    display:none;
+  }
+  .home {
+    row-gap: 10px;
+    column-gap: 20px;
+  }
+  header .container {
+    font-size: 12px;
+  }
+  header .container2 {
+    font-size: 12px;
+  }
+  h1{
+    color:var(--primary);
+    /*-webkit-text-stroke: 1px rgb(0, 0, 0);*/
+  }
+  label, input {
+    font-size: 14px;
+    padding: 4px;
+  }
+  b{
+    font-size:14px;
+  }
+  .stopwatch .numbers {
+    font-size: 30px;
+  }
+  .stopwatch button {
+    font-size: 10px;
+  }
+  .navbutton {
+    font-size: 15px;
+  }
+  .button2 {
+    font-size: 15px;
+    height: 24px;
+    width: 45px;
+    padding-bottom: 1px;
+  }
+  .button3 {
+    font-size: 15px;
+    height: 24px;
+    width: 85px;
+    padding-bottom: 1px;
+  }
+  .toggle-button {
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 35px;
+    width: 30px;
+    cursor: pointer;
+    display: flex;
+  }
+
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-nav ul {
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+  .main-nav li {
+    padding: 0.6rem 0;
+  }
+  .main-nav a {
+    padding: 0;
+  }
+  .main-nav ul.active {
+    display: flex;
+  }
+  .workout-details {
+    font-size: 14px;
+    margin: 1px;
+    padding: 1px;
+    position: relative;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.25);
+  }
 }
 
 
 .workout-details {
-  background: #fff;
-  border-radius: 4px;
+  background: var(--mycolor2);
+  border-radius: 14px;
   margin: 20px auto;
   padding: 20px;
   position: relative;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.25);
 }
 .workout-details h4 {
   margin: 0 0 10px 0;
-  font-size: 1.2em;
+  font-size: 1em;
   color: var(--primary);
 }
 .workout-details p {
   margin: 0;
   font-size: 0.9em;
-  color: #555;
+  color: var(--mycolor3);
 }
 .workout-details span { /*trash can*/
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 10px;
+  right: 10px;
   cursor: pointer;
-  background: #f1f1f1;
+  background: var(--mycolor2);
   padding: 6px;
   border-radius: 50%;
   color: rgb(180, 31, 31);
+}
+
+.workout-details span:hover { /*trash can*/
+  background-color: rgba(129, 31, 31, 0.493);
 }
 
 /* new workout form */
@@ -85,30 +378,35 @@ label, input {
   display: block;
 }
 input {
-  padding: 10px;
   margin-top: 10px;
   margin-bottom: 20px;
   width: 100%;
   border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius: 8px;
   box-sizing: border-box;
 }
 form button {
   background: var(--primary);
   border: 0;
-  color: #fff;
+  color: var(--mycolor2);
   padding: 10px;
   font-family: "Poppins";
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
 }
+
+button:hover {
+  color: var(--mycolor3);
+}
+
 div.error {
-  padding: 10px;
-  background: #ffefef;
+  padding: 15px;
+  background: var(--mycolor2);
   border: 1px solid var(--error);
   color: var(--error);
-  border-radius: 4px;
+  border-radius:50% ;
   margin: 20px 0;
+  text-align: center;
 }
 input.error {
   border: 1px solid var(--error);
@@ -119,14 +417,20 @@ nav {
   display: flex;
   align-items: center;
 }
+
+footer {
+  display: flex;
+  align-items: center;
+}
+
 nav a, nav button {
   margin-left: 10px;
 }
 
 nav button {
-  background: #fff;
+  background: var(--mycolor2);
   color: var(--primary);
-  border: 2px solid var(--primary);
+  border: 2px solid rgba(255, 0, 0, 0);
   padding: 6px 10px;
   border-radius: 4px;
   font-family: "Poppins";
@@ -139,6 +443,59 @@ form.signup, form.login {
   max-width: 400px;
   margin: 40px auto;
   padding: 20px;
-  background: #fff;
-  border-radius: 4px;
+  background: var(--mycolor2);
+  border-radius: 20px;
+}
+
+.Countdown-display button {
+  padding: 0px;
+  border: solid 0px transparent;
+  border-radius: 0px;
+  color: #000000;
+  font-size: 16px;
+
+}
+
+.Button-start, .Button-stop, .Button-reset, .Button-resume {
+  background: var(--primary);
+  border: 0;
+  color: var(--mycolor2);
+  padding: 5px;
+  margin-left: 2px;
+  border-radius: 14px;
+  cursor: pointer;
+  width:60%;
+  height: 35px;
+}
+
+.bmi {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: var(--mycolor2);
+  border-radius: 20px;
+}
+
+.music {
+  max-width: 100%;
+  padding: 10px;
+}
+
+.smalldiv{
+  font-size: 10px;
+}
+
+.mygallery {
+  font-family: sans-serif;
+  text-align: center;
+  max-width: 400px;
+  margin:  auto;
+  padding: 2px;
+  background: var(--mycolor2);
+  border-radius: 55px;
+}
+
+
+.photo {
+  filter: sepia(1%) saturate(1%) brightness(999%) hue-rotate(1deg);
 }

@@ -1,13 +1,19 @@
-# MERN-app
-MERN Stack application:
-frontend : react .
-middle : express & node .
-backend : mongoDB .
-Workout Partner
+# Workout Partner
+### App for our graduation Final Project
+### By: Ruslan & Benny
+### Final project presentation video: https://www.youtube.com/watch?v=ZkIkzOGMfUU
+https://github.com/Benny902/WorkoutPartner/assets/73943596/e4e111f3-9e8d-4577-b84f-d7d88bb34f5a
+### Link to the Web app: https://workoutpartners.herokuapp.com
 
-steps :
-         
-         i will provide info about what i did in each step of development .
+#### MERN-app [MongoDB, Express, React, Node]
+
+
+
+
+Steps :
+         We will provide info about what we did in each step of development .
+
+
 step 1 : initial Express app to power the backend api .
           
           we will use Postman.
@@ -142,3 +148,15 @@ step 28 & Authentication step 16:
 step 29 & Authentication step 17:
 
           Assigning Workouts to Users
+
+step 30:
+
+         Adding Features
+                  Chat/Forum Feature
+                  Total Workout Stopwatch Feature
+                  Rest Countdown Feature
+                  Water Page Feature
+                  Exercises Page Feature
+                  Music Page Feature
+                  BMI Page Feature
+         

@@ -20,11 +20,16 @@ app.use((req, res, next) => {
 app.use('/api/workouts', workoutRoutes)
 app.use('/api/user', userRoutes)
 
+app.get("/", (req,res) =>{
+  res.send('this is backend server');
+  
+});
+
 // connect to db
 mongoose.connect(process.env.MONGO_URI)
   .then(() => {
     // listen for requests
-    app.listen(process.env.PORT, () => {
+    app.listen(process.env.PORT || 4000, () => {
       console.log('connected to db & listening on port', process.env.PORT)
     })
   })
